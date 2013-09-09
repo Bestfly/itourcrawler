@@ -1,0 +1,232 @@
+[
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "Rate": "6.0折",
+                        "StandardPrice": "1750",
+                        "AdultOilFee": "50.00",
+                        "Price": "1050",
+                        "ChildTax": "60.00",
+                        "AdultTax": "120.00",
+                        "Reward": "63"
+                    },
+                    "salelimit": {
+                        "Remarks": "签转别的航空公司、跨月改期以及有政策航班改为无政策航班，需收回代理费。",
+                        "Notes": "销售日期3月8号，乘机日期3月25号起，航班规定离站时间前：同舱位变更收取经济舱全票价(Y)的5%；退票收取经济舱全票价(Y)的10%。航班规定离站时间后：同舱位变更收取经济舱全票价(Y)的10%；退票收取经济舱全票价(Y)的20%。退改签以航空公司最新规定为准，可咨询客服电话4008-168-168"
+                    }
+                }
+            }
+        ],
+        "checksum_seg": [
+            {
+                "depTerm": "",
+                "TakeOffTime": "09:10",
+                "AirlineCode": "MF",
+                "ArriveCityCode": "CGQ",
+                "ArriveTime": "11:50",
+                "Flight": "MF8059",
+                "CraftType": "737",
+                "DepartCityCode": "HGH"
+            }
+        ],
+        "updateTime": "2013-09-08 12:44:08",
+        "bunks_idx": [
+            [
+                {
+                    "Quantity": "A",
+                    "ClassGrade": "经济舱",
+                    "Class": "Q"
+                }
+            ]
+        ],
+        "ns_flts": "HGH0910/CGQ1150",
+        "flightline_id": "fed8a9352e56d180a2640c1c20806285",
+        "fltcomb": "MF8059"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "Rate": "5.5折",
+                        "StandardPrice": "1750",
+                        "AdultOilFee": "50.00",
+                        "Price": "960",
+                        "ChildTax": "60.00",
+                        "AdultTax": "120.00",
+                        "Reward": "36"
+                    },
+                    "salelimit": {
+                        "Remarks": "签转别的航空公司、跨月改期以及有政策航班改为无政策航班，需收回代理费。",
+                        "Notes": "不得签转，航班规定离站时间前后每次变更扣20%，退票扣50%。退改签以航空公司最新规定为准，可咨询客服电话4008-168-168"
+                    }
+                }
+            }
+        ],
+        "checksum_seg": [
+            {
+                "depTerm": "",
+                "TakeOffTime": "11:20",
+                "AirlineCode": "CZ",
+                "ArriveCityCode": "CGQ",
+                "ArriveTime": "14:05",
+                "Flight": "CZ3569",
+                "CraftType": "320",
+                "DepartCityCode": "HGH"
+            }
+        ],
+        "updateTime": "2013-09-08 12:44:08",
+        "bunks_idx": [
+            [
+                {
+                    "Quantity": "2",
+                    "ClassGrade": "经济舱",
+                    "Class": "Q"
+                }
+            ]
+        ],
+        "ns_flts": "HGH1120/CGQ1405",
+        "flightline_id": "a90ad0470bf2d0c3b2dfa4836ee02eb3",
+        "fltcomb": "CZ3569"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "Rate": "5.0折",
+                        "StandardPrice": "1750",
+                        "AdultOilFee": "50.00",
+                        "Price": "880",
+                        "ChildTax": "60.00",
+                        "AdultTax": "120.00",
+                        "Reward": "33"
+                    },
+                    "salelimit": {
+                        "Remarks": "签转别的航空公司、跨月改期以及有政策航班改为无政策航班，需收回代理费。",
+                        "Notes": "不得签转，航班规定离站时间前后每次变更扣20%，退票扣50%。退改签以航空公司最新规定为准，可咨询客服电话4008-168-168"
+                    }
+                }
+            }
+        ],
+        "checksum_seg": [
+            {
+                "depTerm": "",
+                "TakeOffTime": "13:55",
+                "AirlineCode": "CZ",
+                "ArriveCityCode": "CGQ",
+                "ArriveTime": "16:30",
+                "Flight": "CZ6629",
+                "CraftType": "320",
+                "DepartCityCode": "HGH"
+            }
+        ],
+        "updateTime": "2013-09-08 12:44:09",
+        "bunks_idx": [
+            [
+                {
+                    "Quantity": "4",
+                    "ClassGrade": "经济舱",
+                    "Class": "E"
+                }
+            ]
+        ],
+        "ns_flts": "HGH1355/CGQ1630",
+        "flightline_id": "36325009ca0bfaeb0496c6a8b8740ebb",
+        "fltcomb": "CZ6629"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "Rate": "5.0折",
+                        "StandardPrice": "1750",
+                        "AdultOilFee": "50.00",
+                        "Price": "880",
+                        "ChildTax": "60.00",
+                        "AdultTax": "120.00",
+                        "Reward": "44"
+                    },
+                    "salelimit": {
+                        "Remarks": "签转别的航空公司、跨月改期以及有政策航班改为无政策航班，需收回代理费。",
+                        "Notes": "不得签转；起飞(含)前变更收取30%；起飞后变更每次收取50%。起飞(含)前退票收取50%；起飞后不得退票。此规定仅供参考！退改签以航空公司最新规定为准，可咨询客服电话4008-168-168"
+                    }
+                }
+            }
+        ],
+        "checksum_seg": [
+            {
+                "depTerm": "",
+                "TakeOffTime": "07:30",
+                "AirlineCode": "CA",
+                "ArriveCityCode": "CGQ",
+                "ArriveTime": "11:20",
+                "Flight": "CA1907",
+                "CraftType": "319",
+                "DepartCityCode": "HGH"
+            }
+        ],
+        "updateTime": "2013-09-08 12:44:09",
+        "bunks_idx": [
+            [
+                {
+                    "Quantity": "A",
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                }
+            ]
+        ],
+        "ns_flts": "HGH0730/CGQ1120",
+        "flightline_id": "f91c3fb7a0846c7a3f61fa3cb5c8cec9",
+        "fltcomb": "CA1907"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "Rate": "5.0折",
+                        "StandardPrice": "1750",
+                        "AdultOilFee": "50.00",
+                        "Price": "880",
+                        "ChildTax": "60.00",
+                        "AdultTax": "120.00",
+                        "Reward": "88"
+                    },
+                    "salelimit": {
+                        "Remarks": "对应舱位的正常运价才享受此代理费;签转别的航空公司、跨月改期以及有政策航班改为无政策航班，需收回代理费。",
+                        "Notes": "销售日期自2012年8月1日起，航班规定离站时间2小时（含）之前取消定座，每次改期扣10%、退票扣30%；航班规定离站时间2小时内及起飞后取消定座，每次改期扣20%、退票扣40%。注:同等舱位的低票价变更，须补齐舱位差价同时收取改期费退改签以航空公司最新规定为准，可咨询客服电话4008-168-168"
+                    }
+                }
+            }
+        ],
+        "checksum_seg": [
+            {
+                "depTerm": "",
+                "TakeOffTime": "07:30",
+                "AirlineCode": "3U",
+                "ArriveCityCode": "CGQ",
+                "ArriveTime": "11:55",
+                "Flight": "3U8815",
+                "CraftType": "320",
+                "DepartCityCode": "HGH"
+            }
+        ],
+        "updateTime": "2013-09-08 12:44:09",
+        "bunks_idx": [
+            [
+                {
+                    "Quantity": "5",
+                    "ClassGrade": "经济舱",
+                    "Class": "E"
+                }
+            ]
+        ],
+        "ns_flts": "HGH0730/CGQ1155",
+        "flightline_id": "714f986d264463c4e153d157e5a6cd1e",
+        "fltcomb": "3U8815"
+    }
+]

@@ -1,0 +1,240 @@
+[
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 6729.84,
+                        "ChildPrice": 4680,
+                        "Price": 6240,
+                        "ChildTax": 0,
+                        "AdultTax": 0,
+                        "Reward": 489.84
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期800人民币<BR/>退票: 全部未使用800人民币，部分使用800人民币<BR/>旅行出发日期: 2013-09-11;2013-10-31<BR/><BR/>最短/长停留期: 0-12M<BR/>销售时限: 2013.08.17-2013.10.31"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:41:54",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "Y"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "L"
+                }
+            ]
+        ],
+        "flytime": "35小时40分",
+        "fltcomb": "MU5680-MU589"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 6729.84,
+                        "ChildPrice": 4680,
+                        "Price": 6240,
+                        "ChildTax": 0,
+                        "AdultTax": 0,
+                        "Reward": 489.84
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期800人民币<BR/>退票: 全部未使用800人民币，部分使用800人民币<BR/>旅行出发日期: 2013-09-11;2013-10-31<BR/><BR/>最短/长停留期: 0-12M<BR/>销售时限: 2013.08.17-2013.10.31"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:41:54",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "Y"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "L"
+                }
+            ]
+        ],
+        "flytime": "34小时45分",
+        "fltcomb": "MU5684-MU589"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 6729.84,
+                        "ChildPrice": 4680,
+                        "Price": 6240,
+                        "ChildTax": 0,
+                        "AdultTax": 0,
+                        "Reward": 489.84
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期800人民币<BR/>退票: 全部未使用800人民币，部分使用800人民币<BR/>旅行出发日期: 2013-09-11;2013-10-31<BR/><BR/>最短/长停留期: 0-12M<BR/>销售时限: 2013.08.17-2013.10.31"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:41:55",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "Y"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "L"
+                }
+            ]
+        ],
+        "flytime": "31小时40分",
+        "fltcomb": "MU5630-MU589"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 7242,
+                        "ChildPrice": 5330,
+                        "Price": 7100,
+                        "ChildTax": 0,
+                        "AdultTax": 1489,
+                        "Reward": 142
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期800人民币<BR/>退票: 1500人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 0-6M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:41:55",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ]
+        ],
+        "flytime": "20小时20分",
+        "fltcomb": "CA1662-CA985"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 7242,
+                        "ChildPrice": 5330,
+                        "Price": 7100,
+                        "ChildTax": 0,
+                        "AdultTax": 1489,
+                        "Reward": 142
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期800人民币<BR/>退票: 1500人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 0-6M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:41:56",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ]
+        ],
+        "flytime": "17小时30分",
+        "fltcomb": "CA1610-CA985"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 7242,
+                        "ChildPrice": 5330,
+                        "Price": 7100,
+                        "ChildTax": 0,
+                        "AdultTax": 1489,
+                        "Reward": 142
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期800人民币<BR/>退票: 1500人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 0-6M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:41:56",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ]
+        ],
+        "flytime": "16小时40分",
+        "fltcomb": "CA1656-CA985"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8239.74,
+                        "ChildPrice": 5730,
+                        "Price": 7640,
+                        "ChildTax": 0,
+                        "AdultTax": 0,
+                        "Reward": 599.74
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期800人民币<BR/>退票: 全部未使用800人民币，部分使用800人民币<BR/>旅行出发日期: 2013-08-17;2014-03-31<BR/><BR/>最短/长停留期: 0-12M<BR/>销售时限: 2013.08.17-2013.10.31"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:41:56",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "Y"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ]
+        ],
+        "flytime": "17小时30分",
+        "fltcomb": "MU5698-MU577"
+    }
+]

@@ -1,0 +1,1498 @@
+[
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 5170,
+                        "ChildPrice": 3900,
+                        "Price": 5170,
+                        "ChildTax": 0,
+                        "AdultTax": 2815,
+                        "Reward": 0
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 允许在有效期内更改订座，每人每次手续费CNY500。必须在出发日之前取消原订航班，否则按误机条款收取误机费用。<BR/>退票: 不允许退票<BR/>误机: CNY1000<BR/>行李: 2PC<BR/>旅行出发日期: 2013-05-17;2013-06-14<BR/>2013-09-09;2013-09-25<BR/>2013-10-02;2013-12-23<BR/><BR/>最短/长停留期: 2D-6M<BR/>文件销售时限: 2013.08.13-2013.12.31"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:18",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ]
+        ],
+        "flytime": "29小时20分",
+        "fltcomb": "KA621-CX870,CX873-KA622"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 5170,
+                        "ChildPrice": 3900,
+                        "Price": 5170,
+                        "ChildTax": 0,
+                        "AdultTax": 2815,
+                        "Reward": 0
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 允许在有效期内更改订座，每人每次手续费CNY500。必须在出发日之前取消原订航班，否则按误机条款收取误机费用。<BR/>退票: 不允许退票<BR/>误机: CNY1000<BR/>行李: 2PC<BR/>旅行出发日期: 2013-05-17;2013-06-14<BR/>2013-09-09;2013-09-25<BR/>2013-10-02;2013-12-23<BR/><BR/>最短/长停留期: 2D-6M<BR/>文件销售时限: 2013.08.13-2013.12.31"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:18",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ]
+        ],
+        "flytime": "29小时20分",
+        "fltcomb": "KA621-CX870,CX873-KA622"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 5170,
+                        "ChildPrice": 3900,
+                        "Price": 5170,
+                        "ChildTax": 0,
+                        "AdultTax": 2815,
+                        "Reward": 0
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 允许在有效期内更改订座，每人每次手续费CNY500。必须在出发日之前取消原订航班，否则按误机条款收取误机费用。<BR/>退票: 不允许退票<BR/>误机: CNY1000<BR/>行李: 2PC<BR/>旅行出发日期: 2013-05-17;2013-06-14<BR/>2013-09-09;2013-09-25<BR/>2013-10-02;2013-12-23<BR/><BR/>最短/长停留期: 2D-6M<BR/>文件销售时限: 2013.08.13-2013.12.31"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:19",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ]
+        ],
+        "flytime": "29小时20分",
+        "fltcomb": "KA621-CX872,CX873-KA622"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 5170,
+                        "ChildPrice": 3900,
+                        "Price": 5170,
+                        "ChildTax": 0,
+                        "AdultTax": 2815,
+                        "Reward": 0
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 允许在有效期内更改订座，每人每次手续费CNY500。必须在出发日之前取消原订航班，否则按误机条款收取误机费用。<BR/>退票: 不允许退票<BR/>误机: CNY1000<BR/>行李: 2PC<BR/>旅行出发日期: 2013-05-17;2013-06-14<BR/>2013-09-09;2013-09-25<BR/>2013-10-02;2013-12-23<BR/><BR/>最短/长停留期: 2D-6M<BR/>文件销售时限: 2013.08.13-2013.12.31"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:19",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ]
+        ],
+        "flytime": "29小时20分",
+        "fltcomb": "KA621-CX872,CX873-KA622"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 5170,
+                        "ChildPrice": 3900,
+                        "Price": 5170,
+                        "ChildTax": 0,
+                        "AdultTax": 2815,
+                        "Reward": 0
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 允许在有效期内更改订座，每人每次手续费CNY500。必须在出发日之前取消原订航班，否则按误机条款收取误机费用。<BR/>退票: 不允许退票<BR/>误机: CNY1000<BR/>行李: 2PC<BR/>旅行出发日期: 2013-05-17;2013-06-14<BR/>2013-09-09;2013-09-25<BR/>2013-10-02;2013-12-23<BR/><BR/>最短/长停留期: 2D-6M<BR/>文件销售时限: 2013.08.13-2013.12.31"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:20",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ]
+        ],
+        "flytime": "29小时20分",
+        "fltcomb": "KA637-CX870,CX873-KA622"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 5170,
+                        "ChildPrice": 3900,
+                        "Price": 5170,
+                        "ChildTax": 0,
+                        "AdultTax": 2815,
+                        "Reward": 0
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 允许在有效期内更改订座，每人每次手续费CNY500。必须在出发日之前取消原订航班，否则按误机条款收取误机费用。<BR/>退票: 不允许退票<BR/>误机: CNY1000<BR/>行李: 2PC<BR/>旅行出发日期: 2013-05-17;2013-06-14<BR/>2013-09-09;2013-09-25<BR/>2013-10-02;2013-12-23<BR/><BR/>最短/长停留期: 2D-6M<BR/>文件销售时限: 2013.08.13-2013.12.31"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:20",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ]
+        ],
+        "flytime": "29小时20分",
+        "fltcomb": "KA637-CX870,CX873-KA622"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 5170,
+                        "ChildPrice": 3900,
+                        "Price": 5170,
+                        "ChildTax": 0,
+                        "AdultTax": 2815,
+                        "Reward": 0
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 允许在有效期内更改订座，每人每次手续费CNY500。必须在出发日之前取消原订航班，否则按误机条款收取误机费用。<BR/>退票: 不允许退票<BR/>误机: CNY1000<BR/>行李: 2PC<BR/>旅行出发日期: 2013-05-17;2013-06-14<BR/>2013-09-09;2013-09-25<BR/>2013-10-02;2013-12-23<BR/><BR/>最短/长停留期: 2D-6M<BR/>文件销售时限: 2013.08.13-2013.12.31"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:21",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ]
+        ],
+        "flytime": "29小时20分",
+        "fltcomb": "KA637-CX872,CX873-KA622"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 5170,
+                        "ChildPrice": 3900,
+                        "Price": 5170,
+                        "ChildTax": 0,
+                        "AdultTax": 2815,
+                        "Reward": 0
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 允许在有效期内更改订座，每人每次手续费CNY500。必须在出发日之前取消原订航班，否则按误机条款收取误机费用。<BR/>退票: 不允许退票<BR/>误机: CNY1000<BR/>行李: 2PC<BR/>旅行出发日期: 2013-05-17;2013-06-14<BR/>2013-09-09;2013-09-25<BR/>2013-10-02;2013-12-23<BR/><BR/>最短/长停留期: 2D-6M<BR/>文件销售时限: 2013.08.13-2013.12.31"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:21",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ]
+        ],
+        "flytime": "29小时20分",
+        "fltcomb": "KA637-CX872,CX873-KA622"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 5420,
+                        "ChildPrice": 4090,
+                        "Price": 5420,
+                        "ChildTax": 0,
+                        "AdultTax": 2815,
+                        "Reward": 0
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 允许在有效期内更改订座，每人每次手续费CNY500。必须在出发日之前取消原订航班，否则按误机条款收取误机费用。<BR/>退票: 不允许退票<BR/>误机: CNY1000<BR/>行李: 2PC<BR/>旅行出发日期: 2013-05-17;2013-06-14<BR/>2013-09-09;2013-09-25<BR/>2013-10-02;2013-12-23<BR/><BR/>最短/长停留期: 2D-6M<BR/>文件销售时限: 2013.08.13-2013.12.31"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:21",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "S"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "S"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ]
+        ],
+        "flytime": "29小时20分",
+        "fltcomb": "KA627-CX872,CX873-KA622"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 5420,
+                        "ChildPrice": 4090,
+                        "Price": 5420,
+                        "ChildTax": 0,
+                        "AdultTax": 2815,
+                        "Reward": 0
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 允许在有效期内更改订座，每人每次手续费CNY500。必须在出发日之前取消原订航班，否则按误机条款收取误机费用。<BR/>退票: 不允许退票<BR/>误机: CNY1000<BR/>行李: 2PC<BR/>旅行出发日期: 2013-05-17;2013-06-14<BR/>2013-09-09;2013-09-25<BR/>2013-10-02;2013-12-23<BR/><BR/>最短/长停留期: 2D-6M<BR/>文件销售时限: 2013.08.13-2013.12.31"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:21",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "S"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "S"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "N"
+                }
+            ]
+        ],
+        "flytime": "29小时20分",
+        "fltcomb": "KA627-CX872,CX873-KA622"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:25",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1701-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:25",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1701-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:25",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1701-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:25",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1701-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:25",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1701-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:26",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1703-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:26",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1703-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:26",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1703-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:26",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1703-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:26",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1703-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:27",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1711-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:27",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1711-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:27",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1711-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:27",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1711-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:27",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1711-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:28",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1510-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:28",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1510-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:28",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1510-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:28",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1510-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 8517,
+                        "ChildPrice": 6280,
+                        "Price": 8350,
+                        "ChildTax": 0,
+                        "AdultTax": 2891,
+                        "Reward": 167
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 改期1000人民币<BR/>退票: 2000人民币<BR/>旅行出发日期: 2013-09-06;2013-09-25<BR/>2013-10-04;2013-10-31<BR/>2014-01-14;2014-01-31<BR/><BR/>最短/长停留期: 5D-1M<BR/>销售时限: 2013.08.10-2013.10.31<BR/>提前出票天数: 7<BR/>去程适用日期：周一,周二,周三,周四<BR/>回程适用时间：周一,周二,周三,周四"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:28",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "K"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "G"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "U"
+                }
+            ]
+        ],
+        "flytime": "32小时10分",
+        "fltcomb": "CA1510-CA985,CA986-CA1712"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 20040,
+                        "ChildPrice": 15060,
+                        "Price": 20040,
+                        "ChildTax": 0,
+                        "AdultTax": 2815,
+                        "Reward": 0
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 免费<BR/>退票: CNY1000;部分使用扣除已使用航段的同等特选经济舱舱位的单程适用价及退票费CNY1000.<BR/>误机: CNY1000<BR/>行李: 2PC,每件25KG<BR/>备注: 具体使用条件及相关费用以平台客服核对为准<BR/>旅行出发日期: 2013-05-20;2013-07-11<BR/>2013-08-30;2013-12-23<BR/><BR/>最短/长停留期: 0-12M<BR/>文件销售时限: 2013.05.20-2013.09.30"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:28",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "I"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "R"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "R"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "I"
+                }
+            ]
+        ],
+        "flytime": "25小时10分",
+        "fltcomb": "KA623-CX872,CX873-KA636"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 20040,
+                        "ChildPrice": 15060,
+                        "Price": 20040,
+                        "ChildTax": 0,
+                        "AdultTax": 2815,
+                        "Reward": 0
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 免费<BR/>退票: CNY1000;部分使用扣除已使用航段的同等特选经济舱舱位的单程适用价及退票费CNY1000.<BR/>误机: CNY1000<BR/>行李: 2PC,每件25KG<BR/>备注: 具体使用条件及相关费用以平台客服核对为准<BR/>旅行出发日期: 2013-05-20;2013-07-11<BR/>2013-08-30;2013-12-23<BR/><BR/>最短/长停留期: 0-12M<BR/>文件销售时限: 2013.05.20-2013.09.30"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:28",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "I"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "R"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "R"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "I"
+                }
+            ]
+        ],
+        "flytime": "25小时10分",
+        "fltcomb": "KA623-CX872,CX873-KA636"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 20040,
+                        "ChildPrice": 15060,
+                        "Price": 20040,
+                        "ChildTax": 0,
+                        "AdultTax": 2815,
+                        "Reward": 0
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 免费<BR/>退票: CNY1000;部分使用扣除已使用航段的同等特选经济舱舱位的单程适用价及退票费CNY1000.<BR/>误机: CNY1000<BR/>行李: 2PC,每件25KG<BR/>备注: 具体使用条件及相关费用以平台客服核对为准<BR/>旅行出发日期: 2013-05-20;2013-07-11<BR/>2013-08-30;2013-12-23<BR/><BR/>最短/长停留期: 0-12M<BR/>文件销售时限: 2013.05.20-2013.09.30"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:29",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "I"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "R"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "R"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "I"
+                }
+            ]
+        ],
+        "flytime": "25小时10分",
+        "fltcomb": "KA623-CX870,CX873-KA636"
+    },
+    {
+        "prices_data": [
+            {
+                "itour": {
+                    "priceinfo": {
+                        "StandardPrice": 20040,
+                        "ChildPrice": 15060,
+                        "Price": 20040,
+                        "ChildTax": 0,
+                        "AdultTax": 2815,
+                        "Reward": 0
+                    },
+                    "salelimit": {
+                        "Notes": "改期: 免费<BR/>退票: CNY1000;部分使用扣除已使用航段的同等特选经济舱舱位的单程适用价及退票费CNY1000.<BR/>误机: CNY1000<BR/>行李: 2PC,每件25KG<BR/>备注: 具体使用条件及相关费用以平台客服核对为准<BR/>旅行出发日期: 2013-05-20;2013-07-11<BR/>2013-08-30;2013-12-23<BR/><BR/>最短/长停留期: 0-12M<BR/>文件销售时限: 2013.05.20-2013.09.30"
+                    }
+                }
+            }
+        ],
+        "updateTime": "2013-09-08 12:43:29",
+        "bunks_idx": [
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "I"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "R"
+                }
+            ],
+            [
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "R"
+                },
+                {
+                    "ClassGrade": "经济舱",
+                    "Class": "I"
+                }
+            ]
+        ],
+        "flytime": "25小时10分",
+        "fltcomb": "KA623-CX870,CX873-KA636"
+    }
+]
