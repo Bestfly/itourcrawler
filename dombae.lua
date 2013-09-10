@@ -4,6 +4,7 @@ local JSON = require 'cjson'
 local md5 = require 'md5'
 local zlib = require 'zlib'
 local base64 = require 'base64'
+local crypto = require 'crypto'
 
 package.path = "/usr/local/webserver/lua/lib/?.lua;";
 -- pcall(require, "luarocks.require")
@@ -143,9 +144,13 @@ print(r["name"])
 -- local data = client:smembers("cac:a54c7a3b89fe377803a3efa30af43d8e:0252297fd6aae3e3ee191605a128e569:avhid")
 -- print(table.getn(data))
 -- Get the mission.(org/dst/t)
+local ak = "8fed80908d9683600e1d30f2a64006f2"
+local sk = "8047E3D8b60e2887d1d866b4b12028c6"
+
 local org = string.sub(arg[1], 1, 3);
 local dst = string.sub(arg[1], 5, 7);
 local tkey = string.sub(arg[1], 9, -2);
+local expiret = os.time({year=string.sub(tkey, 1, 4), month=tonumber(string.sub(tkey, 5, 6)), day=tonumber(string.sub(tkey, 7, 8)), hour="00"})
 local date = string.sub(arg[1], 9, 12) .. "-" .. string.sub(arg[1], 13, 14) .. "-" .. string.sub(arg[1], 15, 16);
 
 local request = {};
@@ -290,7 +295,11 @@ if code == 200 then
 		local respup = {};
 		local timestamp = os.date("%a, %d %b %Y %X GMT", os.time())
 		local requri = "/besftly/dom/itour/" .. tkey .. "/" .. org .. dst .. "/" .. filet .. ".json";
-		local sign = md5.sumhexa("POST&" .. requri .. "&" .. timestamp .. "&" .. cl .. "&" .. md5.sumhexa("b6x7p6b6x7p6"));
+		local obj = "/dom/itour/" .. tkey .. "/" .. org .. dst .. "/" .. filet .. ".json";
+		-- local obj = "/" .. filet .. ".json";
+		local Content= "MBO" .. "\n" .. "Method=PUT" .. "\n" .. "Bucket=bestfly" .. "\n" .. "Object=" .. obj .. "\n"
+		local Signature = urlencode(base64.encode(crypto.hmac.digest('sha1', Content, sk, true)))
+		local sign = md5.sumhexa("PUT&" .. requri .. "&" .. timestamp .. "&" .. cl .. "&" .. md5.sumhexa("b6x7p6b6x7p6"));
 		-- local hc = http:new()
 		print(sign)
 		print(cl)
@@ -302,15 +311,16 @@ if code == 200 then
 		
 		local body, code, headers, status = http.request {
 		-- local ok, code, headers, status, body = http.request {
-			url = "http://v0.api.upyun.com" .. requri,
+			-- url = "http://v0.api.upyun.com" .. requri,
+			url = "http://bcs.duapp.com/bestfly" .. obj .. "?sign=MBO:" .. ak .. ":" .. Signature,
 			--- proxy = "http://127.0.0.1:8888",
 			timeout = 10000,
-			method = "POST", -- POST or GET
+			method = "PUT", -- POST or GET
 			-- add post content-type and cookie
 			-- headers = { ["Content-Type"] = "application/x-www-form-urlencoded", ["Content-Length"] = string.len(form_data) },
 			-- headers = { ["Date"] = timestamp, ["Authorization"] = "UpYun bestfly:" .. sign, ["Content-Length"] = cl, ["Mkdir"] = "true", ["Content-Type"] = "application/json" },
-			headers = { ["Mkdir"] = "true", ["Date"] = timestamp, ["Authorization"] = "UpYun bestfly:" .. sign, ["Content-Length"] = cl, ["Content-Type"] = "application/x-www-form-urlencoded" },
-			-- headers = { ["Content-Length"] = cl, ["Content-Type"] = "application/x-www-form-urlencoded", ["Content-Length"] = cl },
+			-- headers = { ["Mkdir"] = "true", ["Date"] = timestamp, ["Authorization"] = "UpYun bestfly:" .. sign, ["Content-Length"] = cl, ["Content-Type"] = "application/json" },
+			headers = { ["Content-Length"] = cl, ["Content-Type"] = "text/plain" },
 			-- body = formdata,
 			-- source = ltn12.source.string(form_data);
 			source = ltn12.source.string(data),
@@ -323,24 +333,62 @@ if code == 200 then
 				upyun = upyun .. respup[i]
 			end
 			print(upyun)
+			-- local djson = zlib.compress(JSON.encode(bigtab))
+			-- print(type(zlib.compress(JSON.encode(bigtab))))
+			-- local djson = JSON.encode(bigtab)
+			local res, err = client:hget('dom:itour:' .. tkey, org .. dst)
+			if res ~= nil and res ~= JSON.null and res ~= "" then
+				-- local tobj = tostring(res)
+				local tobj = "/dom/itour/" .. tkey .. "/" .. org .. dst .. "/" .. tostring(res) .. ".json"
+				local Content= "MBO" .. "\n" .. "Method=DELETE" .. "\n" .. "Bucket=bestfly" .. "\n" .. "Object=" .. tobj .. "\n"
+				local Signature = urlencode(base64.encode(crypto.hmac.digest('sha1', Content, sk, true)))
+				local respup = {};
+				local body, code, headers, status = http.request {
+				-- local ok, code, headers, status, body = http.request {
+					-- url = "http://v0.api.upyun.com" .. requri,
+					url = "http://bcs.duapp.com/bestfly" .. tobj .. "?sign=MBO:" .. ak .. ":" .. Signature,
+					--- proxy = "http://127.0.0.1:8888",
+					timeout = 10000,
+					method = "DELETE", -- POST or GET
+					-- add post content-type and cookie
+					-- headers = { ["Content-Type"] = "application/x-www-form-urlencoded", ["Content-Length"] = string.len(form_data) },
+					-- headers = { ["Date"] = timestamp, ["Authorization"] = "UpYun bestfly:" .. sign, ["Content-Length"] = cl, ["Mkdir"] = "true", ["Content-Type"] = "application/json" },
+					-- headers = { ["Mkdir"] = "true", ["Date"] = timestamp, ["Authorization"] = "UpYun bestfly:" .. sign, ["Content-Length"] = cl, ["Content-Type"] = "application/json" },
+					-- headers = { ["Content-Length"] = cl, ["Content-Type"] = "text/plain" },
+					-- body = formdata,
+					-- source = ltn12.source.string(form_data);
+					-- source = ltn12.source.string(data),
+					sink = ltn12.sink.table(respup)
+				}
+				if code == 200 then
+					client:hdel('dom:itour:' .. tkey, org .. dst);
+					local res, err = client:hset('dom:itour:' .. tkey, org .. dst, filet)
+					if not res then
+						print("-------Failed to hset " .. arg[1] .. "--------")
+					else
+						client:expire('dom:itour:' .. tkey, (expiret - os.time()))
+						print("-------well done " .. arg[1] .. "--------")
+					end
+				else
+					print(code)
+					print("-------Failed to DELETE " .. tobj .. "--------")
+					print(status)
+					print(body)
+				end
+			else
+				local res, err = client:hset('dom:itour:' .. tkey, org .. dst, filet)
+				if not res then
+					print("-------Failed to hset " .. arg[1] .. "--------")
+				else
+					client:expire('dom:itour:' .. tkey, (expiret - os.time()))
+					print("-------well done " .. arg[1] .. "--------")
+				end
+			end
 		else
 			print(code)
 			print(status)
 			print(body)
 		end
-		--[[
-		-- local djson = zlib.compress(JSON.encode(bigtab))
-		print(type(zlib.compress(JSON.encode(bigtab))))
-		-- local djson = JSON.encode(bigtab)
-		client:hdel('dom:itour:' .. tkey, org .. dst);
-		local res, err = client:hset('dom:itour:' .. tkey, org .. dst, zlib.compress(JSON.encode(bigtab)))
-		if not res then
-			print("-------Failed to hset " .. arg[1] .. "--------")
-		else
-			client:expire('dom:itour:' .. tkey, 300)
-			print("-------well done " .. arg[1] .. "--------")
-		end
-		--]]
 	else
 		print("-------No data of " .. arg[1] .. "--------")
 	end

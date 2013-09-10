@@ -166,8 +166,20 @@ if code == 200 then
 		-- print("--------------")
 		-- print(JSON.encode(tmpbk))
 	end
-	print(JSON.encode(bigtab))
-
+	-- print(JSON.encode(bigtab))
+	if table.getn(bigtab) > 0 then
+		local data = JSON.encode(bigtab);
+		local filet = os.time();
+		-- api post file.
+		local respup = {};
+		local timestamp = os.date("%a, %d %b %Y %X GMT", os.time())
+		local obj = "/int/itour/" .. tkey .. "/" .. org .. dst .. "/" .. filet .. ".json";
+		local Content= "MBO" .. "\n" .. "Method=PUT" .. "\n" .. "Bucket=bestfly" .. "\n" .. "Object=" .. obj .. "\n"
+		local Signature = urlencode(base64.encode(crypto.hmac.digest('sha1', Content, sk, true)))
+		
+	else
+		print("-------No data of " .. arg[1] .. "--------")
+	end
 else
 	print(code)
 	for k, v in pairs(headers) do
