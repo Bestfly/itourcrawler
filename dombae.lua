@@ -31,7 +31,7 @@ redis.commands.sdiff = redis.command('sdiff')
 function sleep(n)
    socket.select(nil, nil, n)
 end
-
+-- Cloud set.
 function urlencode(s) return s and (s:gsub("[^a-zA-Z0-9.~_-]", function (c) return string.format("%%%02x", c:byte()); end)); end
 function urldecode(s) return s and (s:gsub("%%(%x%x)", function (c) return char(tonumber(c,16)); end)); end
 

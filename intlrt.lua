@@ -2,6 +2,9 @@ local socket = require 'socket'
 local http = require 'socket.http'
 local JSON = require 'cjson'
 local md5 = require 'md5'
+local zlib = require 'zlib'
+local base64 = require 'base64'
+local crypto = require 'crypto'
 
 package.path = "/usr/local/webserver/lua/lib/?.lua;";
 -- pcall(require, "luarocks.require")
@@ -28,17 +31,57 @@ redis.commands.sdiff = redis.command('sdiff')
 function sleep(n)
    socket.select(nil, nil, n)
 end
+-- Cloud set.
+function urlencode(s) return s and (s:gsub("[^a-zA-Z0-9.~_-]", function (c) return string.format("%%%02x", c:byte()); end)); end
+function urldecode(s) return s and (s:gsub("%%(%x%x)", function (c) return char(tonumber(c,16)); end)); end
 
+local function _formencodepart(s)
+	return s and (s:gsub("%W", function (c)
+		if c ~= " " then
+			return format("%%%02x", c:byte());
+		else
+			return "+";
+		end
+	end));
+end
+function formencode(form)
+	local result = {};
+ 	if form[1] then -- Array of ordered { name, value }
+ 		for _, field in ipairs(form) do
+ 			-- t_insert(result, _formencodepart(field.name).."=".._formencodepart(field.value));
+			table.insert(result, field.name .. "=" .. tostring(field.value));
+ 		end
+ 	else -- Unordered map of name -> value
+ 		for name, value in pairs(form) do
+ 			-- table.insert(result, _formencodepart(name).."=".._formencodepart(value));
+			table.insert(result, name .. "=" .. tostring(value));
+ 		end
+ 	end
+ 	return table.concat(result, "&");
+end
+function formdecode(s)
+	if not s:match("=") then return urldecode(s); end
+	local r = {};
+	for k, v in s:gmatch("([^=&]*)=([^&]*)") do
+		k, v = k:gsub("%+", "%%20"), v:gsub("%+", "%%20");
+		k, v = urldecode(k), urldecode(v);
+		t_insert(r, { name = k, value = v });
+		r[k] = v;
+	end
+	return r;
+end
 -- local data = client:smembers("cac:a54c7a3b89fe377803a3efa30af43d8e:0252297fd6aae3e3ee191605a128e569:avhid")
 -- print(table.getn(data))
-
+local ak = "8fed80908d9683600e1d30f2a64006f2"
+local sk = "8047E3D8b60e2887d1d866b4b12028c6"
 local org = string.sub(arg[1], 1, 3);
 local dst = string.sub(arg[1], 5, 7);
-local tkey = string.sub(arg[1], 9, -2);
 local gdate = string.sub(arg[1], 9, 12) .. "-" .. string.sub(arg[1], 13, 14) .. "-" .. string.sub(arg[1], 15, 16);
 local bdate = string.sub(arg[1], 18, 21) .. "-" .. string.sub(arg[1], 22, 23) .. "-" .. string.sub(arg[1], 24, 25);
+local tkey = string.sub(arg[1], 9, 16) .. "," .. string.sub(arg[1], 18, 25);
+local idxt = string.sub(arg[1], 9, 16)
+local expiret = os.time({year=string.sub(idxt, 1, 4), month=tonumber(string.sub(idxt, 5, 6)), day=tonumber(string.sub(idxt, 7, 8)), hour="00"});
 local rt = {};
--- print(org, dst)
 rt["goKey"] = JSON.null
 rt["x_passengerQuantity"] = JSON.null
 rt["x_flightType"] = "1"
@@ -216,7 +259,96 @@ if code == 200 then
 			end
 		end
 	end
-	print(JSON.encode(bigtab))
+	-- print(JSON.encode(bigtab))
+	if table.getn(bigtab) > 0 then
+		local data = JSON.encode(bigtab);
+		local cl = string.len(data)
+		local filet = os.time();
+		-- api post file.
+		local respup = {};
+		local timestamp = os.date("%a, %d %b %Y %X GMT", os.time())
+		local obj = "/intl/itour/" .. tkey .. "/" .. org .. dst .. "/" .. filet .. ".json";
+		local Content= "MBO" .. "\n" .. "Method=PUT" .. "\n" .. "Bucket=bestfly" .. "\n" .. "Object=" .. obj .. "\n"
+		local Signature = urlencode(base64.encode(crypto.hmac.digest('sha1', Content, sk, true)));
+		local body, code, headers, status = http.request {
+		-- local ok, code, headers, status, body = http.request {
+			-- url = "http://v0.api.upyun.com" .. requri,
+			url = "http://bcs.duapp.com/bestfly" .. obj .. "?sign=MBO:" .. ak .. ":" .. Signature,
+			--- proxy = "http://127.0.0.1:8888",
+			timeout = 10000,
+			method = "PUT", -- POST or GET
+			-- add post content-type and cookie
+			-- headers = { ["Content-Type"] = "application/x-www-form-urlencoded", ["Content-Length"] = string.len(form_data) },
+			-- headers = { ["Date"] = timestamp, ["Authorization"] = "UpYun bestfly:" .. sign, ["Content-Length"] = cl, ["Mkdir"] = "true", ["Content-Type"] = "application/json" },
+			-- headers = { ["Mkdir"] = "true", ["Date"] = timestamp, ["Authorization"] = "UpYun bestfly:" .. sign, ["Content-Length"] = cl, ["Content-Type"] = "application/json" },
+			headers = { ["Content-Length"] = cl, ["Content-Type"] = "text/plain" },
+			-- body = formdata,
+			-- source = ltn12.source.string(form_data);
+			source = ltn12.source.string(data),
+			sink = ltn12.sink.table(respup)
+		}
+		if code == 200 then
+			local upyun = "";
+			local len = table.getn(respup)
+			for i = 1, len do
+				upyun = upyun .. respup[i]
+			end
+			print(upyun)
+			local res, err = client:hget('intl:itour:' .. tkey, org .. dst)
+			if res ~= nil and res ~= JSON.null and res ~= "" then
+				local tobj = "/intl/itour/" .. tkey .. "/" .. org .. dst .. "/" .. tostring(res) .. ".json"
+				local Content= "MBO" .. "\n" .. "Method=DELETE" .. "\n" .. "Bucket=bestfly" .. "\n" .. "Object=" .. tobj .. "\n"
+				local Signature = urlencode(base64.encode(crypto.hmac.digest('sha1', Content, sk, true)))
+				local respup = {};
+				local body, code, headers, status = http.request {
+				-- local ok, code, headers, status, body = http.request {
+					-- url = "http://v0.api.upyun.com" .. requri,
+					url = "http://bcs.duapp.com/bestfly" .. tobj .. "?sign=MBO:" .. ak .. ":" .. Signature,
+					--- proxy = "http://127.0.0.1:8888",
+					timeout = 10000,
+					method = "DELETE", -- POST or GET
+					-- add post content-type and cookie
+					-- headers = { ["Content-Type"] = "application/x-www-form-urlencoded", ["Content-Length"] = string.len(form_data) },
+					-- headers = { ["Date"] = timestamp, ["Authorization"] = "UpYun bestfly:" .. sign, ["Content-Length"] = cl, ["Mkdir"] = "true", ["Content-Type"] = "application/json" },
+					-- headers = { ["Mkdir"] = "true", ["Date"] = timestamp, ["Authorization"] = "UpYun bestfly:" .. sign, ["Content-Length"] = cl, ["Content-Type"] = "application/json" },
+					-- headers = { ["Content-Length"] = cl, ["Content-Type"] = "text/plain" },
+					-- body = formdata,
+					-- source = ltn12.source.string(form_data);
+					-- source = ltn12.source.string(data),
+					sink = ltn12.sink.table(respup)
+				}
+				if code == 200 then
+					client:hdel('intl:itour:' .. tkey, org .. dst);
+					local res, err = client:hset('intl:itour:' .. tkey, org .. dst, filet)
+					if not res then
+						print("-------Failed to hset " .. arg[1] .. "--------")
+					else
+						client:expire('intl:itour:' .. tkey, (expiret - os.time()))
+						print("-------well done " .. arg[1] .. "--------")
+					end
+				else
+					print(code)
+					print("-------Failed to DELETE " .. tobj .. "--------")
+					print(status)
+					print(body)
+				end
+			else
+				local res, err = client:hset('intl:itour:' .. tkey, org .. dst, filet)
+				if not res then
+					print("-------Failed to hset " .. arg[1] .. "--------")
+				else
+					client:expire('intl:itour:' .. tkey, (expiret - os.time()))
+					print("-------well done " .. arg[1] .. "--------")
+				end
+			end
+		else
+			print(code)
+			print(status)
+			print(body)
+		end
+	else
+		print("-------No data of " .. arg[1] .. "--------")
+	end
 else
 	print(code)
 	for k, v in pairs(headers) do
