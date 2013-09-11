@@ -15,7 +15,7 @@ function sleep(n)
    socket.select(nil, nil, n)
 end
 
-local file = io.open("/usr/local/webserver/lua/agent/locqueues/config.json", "r");
+local file = io.open("/data/rails2.3.5/itourcrawler/queues/config.json", "r");
 local content = JSON.decode(file:read("*all"));
 file:close();
 -- caculate expiretime by t
@@ -89,6 +89,6 @@ for i = 1, table.getn(city) do
 	for j = 1, tonumber(content.maxtime) do
 		local date = datetime(j)
 		client:zadd("task:hot", expiretime(date, city[i]), city[i] .. "/" .. date .. "/")
-		-- print(expiretime(datetime(j), city[i]))
+		print(expiretime(datetime(j), city[i]))
 	end
 end

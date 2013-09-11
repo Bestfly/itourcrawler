@@ -15,7 +15,7 @@ function sleep(n)
    socket.select(nil, nil, n)
 end
 
-local file = io.open("/usr/local/webserver/lua/agent/config.json", "r");
+local file = io.open("/data/rails2.3.5/itourcrawler/queues/config.json", "r");
 local content = JSON.decode(file:read("*all"));
 file:close();
 

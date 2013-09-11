@@ -1,35 +1,35 @@
 {
-    "host": "192.168.13.2",
+    "host": "rhomobi.com",
     "port": 6388,
-    "maxtime": 90,
+    "maxtime": 60,
     "cachetime": [
         {
             "range": [
                 1,
                 3
             ],
-            "expire": 900
+            "expire": 60
         },
         {
             "range": [
                 3,
                 7
             ],
-            "expire": 1200
+            "expire": 300
         },
         {
             "range": [
                 7,
                 30
             ],
-            "expire": 1500
+            "expire": 600
         },
         {
             "range": [
                 30,
-                90
+                60
             ],
-            "expire": 1800
+            "expire": 1000
         }
     ]
 }
