@@ -121,7 +121,7 @@ if code == 200 then
 		-- print(respbody[i])
 		reslimit = reslimit .. respbody[i]
 	end
-	-- print(reslimit)
+	print(reslimit)
 
 	local data = string.sub(reslimit, 1, -4)
 	data = JSON.decode(data)

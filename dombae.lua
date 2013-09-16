@@ -12,7 +12,7 @@ package.path = "/usr/local/webserver/lua/lib/?.lua;";
 local redis = require 'redis'
 
 local params = {
-    host = 'rhomobi.com',
+    host = 'rhosouth001',
     port = 6388,
 }
 
@@ -152,37 +152,50 @@ local dst = string.sub(arg[1], 5, 7);
 local tkey = string.sub(arg[1], 9, -2);
 local expiret = os.time({year=string.sub(tkey, 1, 4), month=tonumber(string.sub(tkey, 5, 6)), day=tonumber(string.sub(tkey, 7, 8)), hour="00"})
 local date = string.sub(arg[1], 9, 12) .. "-" .. string.sub(arg[1], 13, 14) .. "-" .. string.sub(arg[1], 15, 16);
-
+-- add proxy gateway
+print("http://" .. tostring(arg[2]))
+-- init request body of JSON data
 local request = {};
 -- request["parms"] = "HGH|CGQ|2013-09-20||"
 request["parms"] = string.upper(org) .. "|" .. string.upper(dst) .. "|" .. date .. "||"
 request["cabinClass"] = ""
 request["number"] = -1
-
+print(JSON.encode(request))
+print("-----------------")
+-- init response table
 local respbody = {};
 -- local hc = http:new()
 local body, code, headers, status = http.request {
 -- local ok, code, headers, status, body = http.request {
 	url = "http://flight.itour.cn/ajaxpro/AjaxMethods,App_Code.ashx",
+	-- url = "http://localhost:6001/data-gzip",
 	--- proxy = "http://127.0.0.1:8888",
-	timeout = 10000,
+	proxy = "http://" .. tostring(arg[2]),
+	timeout = 30000,
 	method = "POST", -- POST or GET
 	-- add post content-type and cookie
 	-- headers = { ["Content-Type"] = "application/x-www-form-urlencoded", ["Content-Length"] = string.len(form_data) },
-	headers = { ["X-AjaxPro-Method"] = "GetFlight", ["Content-Length"] = string.len(JSON.encode(request))},
+	-- headers = { ["Host"] = "flight.itour.cn", ["X-AjaxPro-Method"] = "GetFlight", ["Cache-Control"] = "no-cache", ["Accept-Encoding"] = "gzip,deflate,sdch", ["Accept"] = "*/*", ["Origin"] = "chrome-extension://fdmmgilgnpjigdojojpjoooidkmcomcm", ["Connection"] = "keep-alive", ["Content-Type"] = "application/json", ["Content-Length"] = string.len(JSON.encode(request)), ["User-Agent"] = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36" },
+	headers = { ["Host"] = "flight.itour.cn", ["X-AjaxPro-Method"] = "GetFlight", ["Content-Type"] = "application/json", ["Content-Length"] = string.len(JSON.encode(request)), ["User-Agent"] = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36" },
 	-- body = formdata,
 	-- source = ltn12.source.string(form_data);
 	source = ltn12.source.string(JSON.encode(request)),
 	sink = ltn12.sink.table(respbody)
 }
 if code == 200 then
+	print(arg[2])
+	print("---proxy alive---")
+	local res, err = client:rpush("proxy:work", arg[2])
+	print(res, err)
 	local reslimit = "";
 	local reslen = table.getn(respbody)
 	for i = 1, reslen do
 		-- print(respbody[i])
 		reslimit = reslimit .. respbody[i]
 	end
-	-- print(reslimit)
+	print(code, status, body)
+	print("---")
+	print(reslimit)
 	local data = string.sub(reslimit, 2, -5)
 	data = string.gsub(data, "'", '"');
 	data = string.gsub(data, 'LstDetailInfo', '"LstDetailInfo"')
@@ -211,19 +224,22 @@ if code == 200 then
 		local reqlim = {};
 		-- {"parms":"CSX,DLC,2013-10-16,CZ,G,70"}
 		reqlim["parms"] = string.upper(org) .. "," .. string.upper(dst) .. "," .. date .. "," .. string.sub(data[i].FlightNO, 1, 2) .. "," .. data[i].LstDetailInfo[1].Class .. "," .. data[i].LstDetailInfo[1].DiscountValue
-		-- print(JSON.encode(reqlim))
-		
+		print(JSON.encode(reqlim))
+		print("-----------------")
 		local resplim = {};
 		-- local hc = http:new()
 		local body, code, headers, status = http.request {
 		-- local ok, code, headers, status, body = http.request {
 			url = "http://flight.itour.cn/ajaxpro/AjaxMethods,App_Code.ashx",
+			-- url = "http://localhost:6001/data-gzip",
 			--- proxy = "http://127.0.0.1:8888",
+			proxy = "http://" .. tostring(arg[2]),
 			timeout = 10000,
 			method = "POST", -- POST or GET
 			-- add post content-type and cookie
 			-- headers = { ["Content-Type"] = "application/x-www-form-urlencoded", ["Content-Length"] = string.len(form_data) },
-			headers = { ["X-AjaxPro-Method"] = "GetPolicyChangeAndRefund", ["Content-Length"] = string.len(JSON.encode(reqlim))},
+			headers = { ["Host"] = "flight.itour.cn", ["X-AjaxPro-Method"] = "GetPolicyChangeAndRefund", ["Content-Type"] = "application/json", ["Content-Length"] = string.len(JSON.encode(reqlim)), ["User-Agent"] = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36" },
+			-- headers = { ["Host"] = "flight.itour.cn", ["X-AjaxPro-Method"] = "GetPolicyChangeAndRefund", ["Cache-Control"] = "no-cache", ["Accept-Encoding"] = "gzip,deflate,sdch", ["Accept"] = "*/*", ["Origin"] = "chrome-extension://fdmmgilgnpjigdojojpjoooidkmcomcm", ["Connection"] = "keep-alive", ["Content-Type"] = "application/json", ["Content-Length"] = string.len(JSON.encode(reqlim)), ["User-Agent"] = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36" },
 			-- body = formdata,
 			-- source = ltn12.source.string(form_data);
 			source = ltn12.source.string(JSON.encode(reqlim)),
@@ -236,15 +252,20 @@ if code == 200 then
 				-- print(respbody[i])
 				lim = lim .. resplim[i]
 			end
+			print(lim)
 			local idx1 = string.find(lim, "<td>");
 			local idx2 = string.find(lim, "</td>");
 			lim = string.sub(lim, idx1+4, idx2-1);
 			salelimit["Notes"] = lim
-			-- print(lim)
+		else
+			print(code)
+			print("--------------")
+			print(status)
+			print(body)
+			salelimit["Notes"] = "不得签转；起飞(含)前变更免费；起飞后变更每次收取5%。起飞(含)前退票收取5%；起飞后退票收取10%。此规定仅供参考！退改签以航空公司最新规定为准，可咨询客服电话4008-168-168";
 		end
 		
 		salelimit["Remarks"] = data[i].LstDetailInfo[1].Remark
-		-- salelimit["Notes"] = "不得签转；起飞(含)前变更免费；起飞后变更每次收取5%。起飞(含)前退票收取5%；起飞后退票收取10%。此规定仅供参考！退改签以航空公司最新规定为准，可咨询客服电话4008-168-168"
 		pritmp["salelimit"] = salelimit
 		pridata["itour"] = pritmp
 		table.insert(prices_data, pridata)
@@ -287,7 +308,7 @@ if code == 200 then
 	end
 	-- print(JSON.encode(bigtab))
 	if table.getn(bigtab) > 0 then
-		local data = JSON.encode(bigtab);
+		local data = zlib.compress(JSON.encode(bigtab));
 		local filet = os.time();
 		local cl = string.len(data)
 		
