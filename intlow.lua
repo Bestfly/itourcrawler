@@ -113,6 +113,8 @@ function crawler(request)
 	}
 	return headers, code, respbody
 end
+print(JSON.encode(ow));
+print("--------------");
 local headers, code, respbody = crawler(ow)
 if code == 200 then
 	local reslimit = "";
@@ -156,7 +158,7 @@ if code == 200 then
 		-- local ok, code, headers, status, body = http.request {
 			url = "http://iflight.itour.cn/ajaxpro/AjaxMethods,App_Code.ashx",
 			--- proxy = "http://127.0.0.1:8888",
-			timeout = 10000,
+			timeout = 8000,
 			method = "POST", -- POST or GET
 			-- add post content-type and cookie
 			-- headers = { ["Content-Type"] = "application/x-www-form-urlencoded", ["Content-Length"] = string.len(form_data) },
@@ -177,7 +179,13 @@ if code == 200 then
 			local idx2 = string.find(lim, "</td>");
 			lim = string.sub(lim, idx1+4, idx2-1);
 			salelimit["Notes"] = lim
-			-- print(lim)
+			print(lim)
+		else
+			print(code)
+			print("--------------")
+			print(status)
+			print(body)
+			salelimit["Notes"] = "不得签转；起飞(含)前变更免费；起飞后变更每次收取5%。起飞(含)前退票收取5%；起飞后退票收取10%。此规定仅供参考！退改签以航空公司最新规定为准，可咨询客服电话4008-168-168";
 		end
 		
 		pritmp["salelimit"] = salelimit
@@ -278,10 +286,23 @@ if code == 200 then
 						print("-------well done " .. arg[1] .. "--------")
 					end
 				else
-					print(code)
-					print("-------Failed to DELETE " .. tobj .. "--------")
-					print(status)
-					print(body)
+					if code == 404 then
+						print(code)
+						print("-------baidu 404 " .. tobj .. "--------")
+						client:hdel('intl:itour:' .. tkey, org .. dst);
+						local res, err = client:hset('intl:itour:' .. tkey, org .. dst, filet)
+						if not res then
+							print("-------Failed to hset " .. arg[1] .. "--------")
+						else
+							client:expire('intl:itour:' .. tkey, (expiret - os.time()))
+							print("-------well done " .. arg[1] .. "--------")
+						end
+					else
+						print(code)
+						print("-------Failed to DELETE " .. tobj .. "--------")
+						print(status)
+						print(body)
+					end
 				end
 			else
 				local res, err = client:hset('intl:itour:' .. tkey, org .. dst, filet)

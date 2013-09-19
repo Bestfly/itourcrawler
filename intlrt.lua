@@ -115,6 +115,8 @@ function crawler(request)
 	}
 	return headers, code, respbody
 end
+print(JSON.encode(rt));
+print("--------------");
 local headers, code, respbody = crawler(rt)
 if code == 200 then
 	local reslimit = "";
@@ -123,7 +125,7 @@ if code == 200 then
 		-- print(respbody[i])
 		reslimit = reslimit .. respbody[i]
 	end
-	-- print(reslimit)
+	print(reslimit)
 
 	local data = string.sub(reslimit, 1, -4)
 	data = JSON.decode(data)
@@ -179,7 +181,7 @@ if code == 200 then
 			local idx2 = string.find(lim, "</td>");
 			lim = string.sub(lim, idx1+4, idx2-1);
 			salelimit["Notes"] = lim
-			-- print(lim)
+			print(lim)
 		end
 		
 		pritmp["salelimit"] = salelimit
@@ -216,7 +218,9 @@ if code == 200 then
 		subrt["x_carrierCode"] = ""
 		subrt["x_cabinClass"] = "0"
 		subrt["x_passengerType"] = "1"
-		-- print(JSON.encode(subrt))
+		print("--------------");
+		print(JSON.encode(subrt))
+		print("--------------");
 		local headers, code, respbody = crawler(subrt)
 		if code == 200 then
 			local subres = "";
@@ -226,7 +230,7 @@ if code == 200 then
 				subres = subres .. respbody[si]
 			end
 			local subdata = string.sub(subres, 1, -4)
-			-- print(subdata)
+			print(subdata)
 			subdata = JSON.decode(subdata)
 			subdata = subdata.listView
 			for j = 1, table.getn(subdata)-1 do
