@@ -94,18 +94,19 @@ ow["x_carrierCode"] = ""
 ow["x_cabinClass"] = "0"
 ow["x_passengerType"] = "1"
 
-function crawler(request)
+function crawler(request, pry)
 	local respbody = {};
 	-- local hc = http:new()
 	local body, code, headers, status = http.request {
 	-- local ok, code, headers, status, body = http.request {
 		url = "http://iflight.itour.cn/ajaxpro/AjaxMethods,App_Code.ashx",
 		--- proxy = "http://127.0.0.1:8888",
+		proxy = "http://" .. pry,
 		timeout = 10000,
 		method = "POST", -- POST or GET
 		-- add post content-type and cookie
 		-- headers = { ["Content-Type"] = "application/x-www-form-urlencoded", ["Content-Length"] = string.len(form_data) },
-		headers = { ["X-AjaxPro-Method"] = "GetIFlightInfo", ["Content-Length"] = string.len(JSON.encode(request))},
+		headers = { ["Host"] = "iflight.itour.cn", ["X-AjaxPro-Method"] = "GetIFlightInfo", ["Content-Length"] = string.len(JSON.encode(request))},
 		-- body = formdata,
 		-- source = ltn12.source.string(form_data);
 		source = ltn12.source.string(JSON.encode(request)),
@@ -115,7 +116,7 @@ function crawler(request)
 end
 print(JSON.encode(ow));
 print("--------------");
-local headers, code, respbody = crawler(ow)
+local headers, code, respbody = crawler(ow, tostring(arg[2]))
 if code == 200 then
 	local reslimit = "";
 	local reslen = table.getn(respbody)
@@ -158,11 +159,12 @@ if code == 200 then
 		-- local ok, code, headers, status, body = http.request {
 			url = "http://iflight.itour.cn/ajaxpro/AjaxMethods,App_Code.ashx",
 			--- proxy = "http://127.0.0.1:8888",
+			proxy = "http://" .. tostring(arg[2]),
 			timeout = 8000,
 			method = "POST", -- POST or GET
 			-- add post content-type and cookie
 			-- headers = { ["Content-Type"] = "application/x-www-form-urlencoded", ["Content-Length"] = string.len(form_data) },
-			headers = { ["X-AjaxPro-Method"] = "GetFileLimition", ["Content-Length"] = string.len(JSON.encode(req))},
+			headers = { ["Host"] = "iflight.itour.cn", ["X-AjaxPro-Method"] = "GetFileLimition", ["Content-Length"] = string.len(JSON.encode(req))},
 			-- body = formdata,
 			-- source = ltn12.source.string(form_data);
 			source = ltn12.source.string(JSON.encode(req)),
@@ -323,9 +325,9 @@ if code == 200 then
 	end
 else
 	print(code)
-	for k, v in pairs(headers) do
-		print(k, v);
-	end
+	print("--------------")
+	print(status)
+	print(body)
 end
 --[[
 local wname = "/data/logs/localcityhasline.ini"

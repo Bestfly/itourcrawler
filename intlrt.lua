@@ -96,18 +96,19 @@ rt["x_carrierCode"] = ""
 rt["x_cabinClass"] = "0"
 rt["x_passengerType"] = "1"
 
-function crawler(request)
+function crawler(request, pry)
 	local respbody = {};
 	-- local hc = http:new()
 	local body, code, headers, status = http.request {
 	-- local ok, code, headers, status, body = http.request {
 		url = "http://iflight.itour.cn/ajaxpro/AjaxMethods,App_Code.ashx",
 		--- proxy = "http://127.0.0.1:8888",
+		proxy = "http://" .. pry,
 		timeout = 10000,
 		method = "POST", -- POST or GET
 		-- add post content-type and cookie
 		-- headers = { ["Content-Type"] = "application/x-www-form-urlencoded", ["Content-Length"] = string.len(form_data) },
-		headers = { ["X-AjaxPro-Method"] = "GetIFlightInfo", ["Content-Length"] = string.len(JSON.encode(request))},
+		headers = { ["Host"] = "iflight.itour.cn", ["X-AjaxPro-Method"] = "GetIFlightInfo", ["Content-Length"] = string.len(JSON.encode(request)), ["Content-Type"] = "application/json" },
 		-- body = formdata,
 		-- source = ltn12.source.string(form_data);
 		source = ltn12.source.string(JSON.encode(request)),
@@ -117,7 +118,7 @@ function crawler(request)
 end
 print(JSON.encode(rt));
 print("--------------");
-local headers, code, respbody = crawler(rt)
+local headers, code, respbody = crawler(rt, tostring(arg[2]))
 if code == 200 then
 	local reslimit = "";
 	local reslen = table.getn(respbody)
@@ -160,11 +161,12 @@ if code == 200 then
 		-- local ok, code, headers, status, body = http.request {
 			url = "http://iflight.itour.cn/ajaxpro/AjaxMethods,App_Code.ashx",
 			--- proxy = "http://127.0.0.1:8888",
+			proxy = "http://" .. tostring(arg[2]),
 			timeout = 10000,
 			method = "POST", -- POST or GET
 			-- add post content-type and cookie
 			-- headers = { ["Content-Type"] = "application/x-www-form-urlencoded", ["Content-Length"] = string.len(form_data) },
-			headers = { ["X-AjaxPro-Method"] = "GetFileLimition", ["Content-Length"] = string.len(JSON.encode(req))},
+			headers = { ["Host"] = "iflight.itour.cn", ["X-AjaxPro-Method"] = "GetFileLimition", ["Content-Length"] = string.len(JSON.encode(req))},
 			-- body = formdata,
 			-- source = ltn12.source.string(form_data);
 			source = ltn12.source.string(JSON.encode(req)),
@@ -219,9 +221,11 @@ if code == 200 then
 		subrt["x_cabinClass"] = "0"
 		subrt["x_passengerType"] = "1"
 		print("--------------");
-		print(JSON.encode(subrt))
+		print(JSON.encode(subrt));
+		local tmprandom = math.random(2,4);
+		print(tostring(arg[tmprandom]));
+		local headers, code, respbody = crawler(subrt, tostring(arg[tmprandom]))
 		print("--------------");
-		local headers, code, respbody = crawler(subrt)
 		if code == 200 then
 			local subres = "";
 			local subreslen = table.getn(respbody)
@@ -355,9 +359,9 @@ if code == 200 then
 	end
 else
 	print(code)
-	for k, v in pairs(headers) do
-		print(k, v);
-	end
+	print("--------------")
+	print(status)
+	print(body)
 end
 --[[
 local wname = "/data/logs/localcityhasline.ini"

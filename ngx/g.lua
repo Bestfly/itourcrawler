@@ -52,16 +52,20 @@ if ngx.var.request_method == "GET" then
 else
 	-- ngx.exit(ngx.HTTP_FORBIDDEN);
 	ngx.req.read_body();
+	-- local uargs = ngx.req.get_uri_args();
+	-- local pargs = ngx.req.get_post_args();
+	-- local phead = ngx.req.get_headers();
 	local pcontent = ngx.req.get_body_data();
 	if pcontent then
 		local tmprandom = math.random(1,10);
 		local hc = http:new()
 		local ok, code, headers, status, body = hc:request {
-			url = string.format(baseurl, cloudfetch[tmprandom], tmpuri),
+			url = string.format(baseurl, cloudfetch[tmprandom], tmpuri) .. "?" .. ngx.var.args,
 			-- proxy = "http://" .. ngx.decode_base64(ngx.var.proxy),
 			timeout = 3000,
 			method = "POST", -- POST or GET
 			-- add post content-type and cookie
+			-- headers = phead,
 			headers = { ["Host"] = cloudfetch[tmprandom] .. ".duapp.com", ["User-Agent"] = "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6" },
 			-- body = ltn12.source.string(form_data),
 			body = pcontent,
@@ -69,6 +73,19 @@ else
 		if code == 200 and body ~= nil then
 			ngx.print(body);
 		else
+			local wname = "/data/logs/rholog.txt"
+			local wfile = io.open(wname, "w+");
+			wfile:write(os.date());
+			wfile:write("\r\n---------------------\r\n");
+			wfile:write(pcontent);
+			wfile:write("\r\n---------------------\r\n");
+			wfile:write(code);
+			wfile:write("\r\n---------------------\r\n");
+			wfile:write(ngx.var.remote_addr);
+			wfile:write("\r\n---------------------\r\n");
+			wfile:write(string.format(baseurl, cloudfetch[tmprandom], tmpuri) .. "?" .. ngx.var.args);
+			wfile:write("\r\n---------------------\r\n");
+			io.close(wfile);
 			ngx.print(error000(code, status))
 		end
 	else
