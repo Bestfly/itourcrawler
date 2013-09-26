@@ -36,7 +36,7 @@ if ngx.var.request_method == "POST" then
 	ngx.req.read_body();
 	-- local uargs = ngx.req.get_uri_args();
 	-- local pargs = ngx.req.get_post_args();
-	-- local phead = ngx.req.get_headers();
+	local phead = ngx.req.get_headers();
 	local pcontent = ngx.req.get_body_data();
 	if pcontent then
 		local tmprandom = math.random(1,2);
@@ -48,7 +48,7 @@ if ngx.var.request_method == "POST" then
 			method = "POST", -- POST or GET
 			-- add post content-type and cookie
 			-- headers = phead,
-			headers = { ["Host"] = cloudfetch[tmprandom] .. ".duapp.com" },
+			headers = { ["Host"] = cloudfetch[tmprandom] .. ".duapp.com", ["Content-Length"] = string.len(pcontent), ["Content-Type"] = "application/x-www-form-urlencoded"},
 			-- body = ltn12.source.string(form_data),
 			body = pcontent,
 		}
