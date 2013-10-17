@@ -73,7 +73,6 @@ function dispatcher ()
 end
 -- coroutine end
 local url = "http://rhosouth001/task-queues/1/";
--- local dis = "http://api.bestfly.cn/distribute/PriceUpdate/";
 while url do
 	local body, code, headers = http.request(url)
 	if code == 200 then
